@@ -1601,7 +1601,7 @@ LOAD d:/stm/stm32_clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-e
                 0x10000000                _eccmram = .
                 0x10000000                . = ALIGN (0x4)
 
-.bss            0x2000043c      0xa7c
+.bss            0x2000043c      0x374
                 0x2000043c                _sbss = .
                 0x2000043c                __bss_start__ = _sbss
  *(.bss)
@@ -1619,33 +1619,33 @@ LOAD d:/stm/stm32_clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-e
                 0x20000548                OV7725_IDCode
  *fill*         0x20000549        0x3 
  .bss.image_bin
-                0x2000054c      0x960 CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_7725.c.obj
+                0x2000054c      0x258 CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_7725.c.obj
                 0x2000054c                image_bin
  .bss.ov7725_finish_flag
-                0x20000eac        0x1 CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_7725.c.obj
-                0x20000eac                ov7725_finish_flag
- *fill*         0x20000ead        0x3 
- .bss.uwTick    0x20000eb0        0x4 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
-                0x20000eb0                uwTick
+                0x200007a4        0x1 CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_7725.c.obj
+                0x200007a4                ov7725_finish_flag
+ *fill*         0x200007a5        0x3 
+ .bss.uwTick    0x200007a8        0x4 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+                0x200007a8                uwTick
  .bss.__lock___atexit_recursive_mutex
-                0x20000eb4        0x1 d:/stm/stm32_clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
-                0x20000eb4                __lock___atexit_recursive_mutex
+                0x200007ac        0x1 d:/stm/stm32_clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libg.a(lib_a-lock.o)
+                0x200007ac                __lock___atexit_recursive_mutex
  *(COMMON)
-                0x20000eb8                . = ALIGN (0x4)
- *fill*         0x20000eb5        0x3 
-                0x20000eb8                _ebss = .
-                0x20000eb8                __bss_end__ = _ebss
+                0x200007b0                . = ALIGN (0x4)
+ *fill*         0x200007ad        0x3 
+                0x200007b0                _ebss = .
+                0x200007b0                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x20000eb8      0x600
-                0x20000eb8                . = ALIGN (0x8)
+                0x200007b0      0x600
+                0x200007b0                . = ALIGN (0x8)
                 [!provide]                PROVIDE (end = .)
-                0x20000eb8                PROVIDE (_end = .)
-                0x200010b8                . = (. + _Min_Heap_Size)
- *fill*         0x20000eb8      0x200 
-                0x200014b8                . = (. + _Min_Stack_Size)
- *fill*         0x200010b8      0x400 
-                0x200014b8                . = ALIGN (0x8)
+                0x200007b0                PROVIDE (_end = .)
+                0x200009b0                . = (. + _Min_Heap_Size)
+ *fill*         0x200007b0      0x200 
+                0x20000db0                . = (. + _Min_Stack_Size)
+ *fill*         0x200009b0      0x400 
+                0x20000db0                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -1727,7 +1727,7 @@ LOAD d:/stm/stm32_clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-e
 LOAD d:/stm/stm32_clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libm.a
 LOAD d:/stm/stm32_clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a
 
-.debug_info     0x00000000    0x123d6
+.debug_info     0x00000000    0x123d4
  .debug_info    0x00000000      0x50f CMakeFiles/camera.elf.dir/Core/Src/dma.c.obj
  .debug_info    0x0000050f      0x752 CMakeFiles/camera.elf.dir/Core/Src/gpio.c.obj
  .debug_info    0x00000c61      0x640 CMakeFiles/camera.elf.dir/Core/Src/main.c.obj
@@ -1737,16 +1737,16 @@ LOAD d:/stm/stm32_clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-e
  .debug_info    0x00001d08      0xc51 CMakeFiles/camera.elf.dir/Core/Src/tim.c.obj
  .debug_info    0x00002959      0x9ec CMakeFiles/camera.elf.dir/Core/Src/usart.c.obj
  .debug_info    0x00003345       0x22 CMakeFiles/camera.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj
- .debug_info    0x00003367     0x1418 CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_7725.c.obj
- .debug_info    0x0000477f      0x93f CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_IIC.c.obj
- .debug_info    0x000050be      0x9f0 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_info    0x00005aae     0x10de CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_info    0x00006b8c      0xb3f CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_info    0x000076cb      0x7b0 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_info    0x00007e7b      0xb03 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_info    0x0000897e     0x3dc6 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_info    0x0000c744     0x1b03 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_info    0x0000e247     0x418f CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_info    0x00003367     0x1416 CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_7725.c.obj
+ .debug_info    0x0000477d      0x93f CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_IIC.c.obj
+ .debug_info    0x000050bc      0x9f0 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_info    0x00005aac     0x10de CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_info    0x00006b8a      0xb3f CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_info    0x000076c9      0x7b0 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_info    0x00007e79      0xb03 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_info    0x0000897c     0x3dc6 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_info    0x0000c742     0x1b03 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_info    0x0000e245     0x418f CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 
 .debug_abbrev   0x00000000     0x2463
  .debug_abbrev  0x00000000      0x13e CMakeFiles/camera.elf.dir/Core/Src/dma.c.obj
@@ -1830,7 +1830,7 @@ LOAD d:/stm/stm32_clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-e
  .debug_ranges  0x000008e8      0x158 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
  .debug_ranges  0x00000a40      0x210 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 
-.debug_line     0x00000000     0xf864
+.debug_line     0x00000000     0xf85e
  .debug_line    0x00000000      0x1c8 CMakeFiles/camera.elf.dir/Core/Src/dma.c.obj
  .debug_line    0x000001c8      0x256 CMakeFiles/camera.elf.dir/Core/Src/gpio.c.obj
  .debug_line    0x0000041e      0x3b3 CMakeFiles/camera.elf.dir/Core/Src/main.c.obj
@@ -1840,16 +1840,16 @@ LOAD d:/stm/stm32_clion/gcc-arm-none-eabi-10.3-2021.10/bin/../lib/gcc/arm-none-e
  .debug_line    0x00000ecf      0x3d9 CMakeFiles/camera.elf.dir/Core/Src/tim.c.obj
  .debug_line    0x000012a8      0x303 CMakeFiles/camera.elf.dir/Core/Src/usart.c.obj
  .debug_line    0x000015ab       0x95 CMakeFiles/camera.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj
- .debug_line    0x00001640      0x454 CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_7725.c.obj
- .debug_line    0x00001a94      0x48d CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_IIC.c.obj
- .debug_line    0x00001f21      0x5a3 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_line    0x000024c4      0x7ea CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_line    0x00002cae      0xe53 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_line    0x00003b01      0x70f CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_line    0x00004210      0xb76 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_line    0x00004d86     0x4b07 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_line    0x0000988d     0x1cde CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_line    0x0000b56b     0x42f9 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_line    0x00001640      0x44e CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_7725.c.obj
+ .debug_line    0x00001a8e      0x48d CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_IIC.c.obj
+ .debug_line    0x00001f1b      0x5a3 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_line    0x000024be      0x7ea CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_line    0x00002ca8      0xe53 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_line    0x00003afb      0x70f CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_line    0x0000420a      0xb76 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_line    0x00004d80     0x4b07 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_line    0x00009887     0x1cde CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_line    0x0000b565     0x42f9 CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 
 .debug_str      0x00000000     0x3f2f
  .debug_str     0x00000000      0x79b CMakeFiles/camera.elf.dir/Core/Src/dma.c.obj

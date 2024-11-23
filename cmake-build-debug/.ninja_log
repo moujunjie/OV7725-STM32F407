@@ -66,3 +66,6 @@
 2	146	7540447411267320	CMakeFiles/camera.elf.dir/Core/Src/dma.c.obj	6dd6c50c98eb4310
 22	151	7540447411327386	CMakeFiles/camera.elf.dir/Core/Src/main.c.obj	eeb26a3dcc06d402
 151	401	7540447413205322	camera.elf	f30656e79725b10
+2	176	7540466147104086	CMakeFiles/camera.elf.dir/Core/Src/main.c.obj	eeb26a3dcc06d402
+14	186	7540466147186215	CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_7725.c.obj	1038891d820fb5b
+187	479	7540466149306433	camera.elf	f30656e79725b10
