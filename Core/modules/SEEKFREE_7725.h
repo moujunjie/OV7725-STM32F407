@@ -198,6 +198,7 @@ extern uint8_t ov7725_finish_flag;								//图像采集完成标志位
 
 //函数声明
 uint8_t ov7725_init(void);
+void put_char(UART_HandleTypeDef* USARTx, uint8_t Data);
 void seekfree_sendimg_7725(void *imgaddr, uint32_t imgsize);
 void DMA_transfer_complete_callback( DMA_HandleTypeDef * _hdma);
 

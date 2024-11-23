@@ -78,6 +78,10 @@ void Error_Handler(void);
 #define SCL_GPIO_Port GPIOB
 #define SDA_Pin GPIO_PIN_11
 #define SDA_GPIO_Port GPIOB
+#define LCD_SCK_PIN_Pin GPIO_PIN_3
+#define LCD_SCK_PIN_GPIO_Port GPIOB
+#define LCD_SDA_PIN_Pin GPIO_PIN_5
+#define LCD_SDA_PIN_GPIO_Port GPIOB
 #define Y0_Pin GPIO_PIN_0
 #define Y0_GPIO_Port GPIOE
 #define Y1_Pin GPIO_PIN_1

@@ -173,7 +173,7 @@ void ov7725_port_init(void)
     }
     
     //打开DMA中断
-    HAL_DMA_Start_IT(&hdma_tim8_ch4_trig_com, (uint32_t)&GPIOF->IDR, (uint32_t)image_bin, OV7725_SIZE);
+    HAL_DMA_Start_IT(&hdma_tim8_ch4_trig_com, (uint32_t)&GPIOE->IDR, (uint32_t)image_bin, OV7725_SIZE);
     
     //使能TIM触发DMA链路
     __HAL_TIM_ENABLE_DMA(&htim8, TIM_DMA_TRIGGER);
@@ -190,7 +190,12 @@ void ov7725_port_init(void)
 //-------------------------------------------------------------------------------------------------------------------
 uint8_t ov7725_init(void)
 {
-    ov7725_reg_init();          //摄像头寄存器配置
+    uint8_t f = ov7725_reg_init();          //摄像头寄存器配置
+
+    if(f == 1)
+    {
+        put_char(&huart1,'A');
+    }
     ov7725_port_init();         //TIM和DMA使能
     return 0;
 }
@@ -236,14 +241,21 @@ void seekfree_sendimg_7725(void *imgaddr, uint32_t imgsize)
   
 //使用寄存器发送图像数据。
 	uint32_t i;
-	put_char(&huart1,0x00);
+	/*put_char(&huart1,0x00);
     put_char(&huart1,0xff);
     put_char(&huart1,0x01);
-    put_char(&huart1,0x01);
+    put_char(&huart1,0x01);*/
     for(i=0; i<(imgsize); i++)
     {
-        put_char(&huart1,((uint8_t *)(imgaddr))[i]);
+        if(((uint8_t *)(imgaddr))[i] == 0)
+        {
+            put_char(&huart1,0xFE);
+        }else{
+            put_char(&huart1,0x00);
+        }
+
     }
+    put_char(&huart1,0xFF);
 }
 
 

@@ -79,6 +79,16 @@ build CMakeFiles/camera.elf.dir/Core/Src/main.c.obj: C_COMPILER__camera.2eelf_De
   TARGET_COMPILE_PDB = CMakeFiles\camera.elf.dir\
   TARGET_PDB = camera.elf.pdb
 
+build CMakeFiles/camera.elf.dir/Core/Src/spi.c.obj: C_COMPILER__camera.2eelf_Debug E$:/STM32/camera/Core/Src/spi.c || cmake_object_order_depends_target_camera.elf
+  DEFINES = -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\camera.elf.dir\Core\Src\spi.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -IE:/STM32/camera/Core/Inc -IE:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Inc -IE:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IE:/STM32/camera/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IE:/STM32/camera/Drivers/CMSIS/Include -IE:/STM32/camera/Core/modules
+  OBJECT_DIR = CMakeFiles\camera.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\camera.elf.dir\Core\Src
+  TARGET_COMPILE_PDB = CMakeFiles\camera.elf.dir\
+  TARGET_PDB = camera.elf.pdb
+
 build CMakeFiles/camera.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: C_COMPILER__camera.2eelf_Debug E$:/STM32/camera/Core/Src/stm32f4xx_hal_msp.c || cmake_object_order_depends_target_camera.elf
   DEFINES = -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\camera.elf.dir\Core\Src\stm32f4xx_hal_msp.c.obj.d
@@ -172,6 +182,36 @@ build CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_7725.c.obj: C_COMPILER__ca
 build CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_IIC.c.obj: C_COMPILER__camera.2eelf_Debug E$:/STM32/camera/Core/modules/SEEKFREE_IIC.c || cmake_object_order_depends_target_camera.elf
   DEFINES = -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\camera.elf.dir\Core\modules\SEEKFREE_IIC.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -IE:/STM32/camera/Core/Inc -IE:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Inc -IE:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IE:/STM32/camera/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IE:/STM32/camera/Drivers/CMSIS/Include -IE:/STM32/camera/Core/modules
+  OBJECT_DIR = CMakeFiles\camera.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\camera.elf.dir\Core\modules
+  TARGET_COMPILE_PDB = CMakeFiles\camera.elf.dir\
+  TARGET_PDB = camera.elf.pdb
+
+build CMakeFiles/camera.elf.dir/Core/modules/lcd_fonts.c.obj: C_COMPILER__camera.2eelf_Debug E$:/STM32/camera/Core/modules/lcd_fonts.c || cmake_object_order_depends_target_camera.elf
+  DEFINES = -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\camera.elf.dir\Core\modules\lcd_fonts.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -IE:/STM32/camera/Core/Inc -IE:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Inc -IE:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IE:/STM32/camera/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IE:/STM32/camera/Drivers/CMSIS/Include -IE:/STM32/camera/Core/modules
+  OBJECT_DIR = CMakeFiles\camera.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\camera.elf.dir\Core\modules
+  TARGET_COMPILE_PDB = CMakeFiles\camera.elf.dir\
+  TARGET_PDB = camera.elf.pdb
+
+build CMakeFiles/camera.elf.dir/Core/modules/lcd_image.c.obj: C_COMPILER__camera.2eelf_Debug E$:/STM32/camera/Core/modules/lcd_image.c || cmake_object_order_depends_target_camera.elf
+  DEFINES = -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\camera.elf.dir\Core\modules\lcd_image.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -IE:/STM32/camera/Core/Inc -IE:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Inc -IE:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IE:/STM32/camera/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IE:/STM32/camera/Drivers/CMSIS/Include -IE:/STM32/camera/Core/modules
+  OBJECT_DIR = CMakeFiles\camera.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\camera.elf.dir\Core\modules
+  TARGET_COMPILE_PDB = CMakeFiles\camera.elf.dir\
+  TARGET_PDB = camera.elf.pdb
+
+build CMakeFiles/camera.elf.dir/Core/modules/lcd_spi_200.c.obj: C_COMPILER__camera.2eelf_Debug E$:/STM32/camera/Core/modules/lcd_spi_200.c || cmake_object_order_depends_target_camera.elf
+  DEFINES = -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\camera.elf.dir\Core\modules\lcd_spi_200.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
   INCLUDES = -IE:/STM32/camera/Core/Inc -IE:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Inc -IE:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IE:/STM32/camera/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IE:/STM32/camera/Drivers/CMSIS/Include -IE:/STM32/camera/Core/modules
   OBJECT_DIR = CMakeFiles\camera.elf.dir
@@ -309,6 +349,16 @@ build CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_r
   TARGET_COMPILE_PDB = CMakeFiles\camera.elf.dir\
   TARGET_PDB = camera.elf.pdb
 
+build CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: C_COMPILER__camera.2eelf_Debug E$:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c || cmake_object_order_depends_target_camera.elf
+  DEFINES = -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\camera.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -IE:/STM32/camera/Core/Inc -IE:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Inc -IE:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -IE:/STM32/camera/Drivers/CMSIS/Device/ST/STM32F4xx/Include -IE:/STM32/camera/Drivers/CMSIS/Include -IE:/STM32/camera/Core/modules
+  OBJECT_DIR = CMakeFiles\camera.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles\camera.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
+  TARGET_COMPILE_PDB = CMakeFiles\camera.elf.dir\
+  TARGET_PDB = camera.elf.pdb
+
 build CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: C_COMPILER__camera.2eelf_Debug E$:/STM32/camera/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c || cmake_object_order_depends_target_camera.elf
   DEFINES = -DDEBUG -DSTM32F407xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\camera.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c.obj.d
@@ -347,7 +397,7 @@ build CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_u
 #############################################
 # Link the executable camera.elf
 
-build camera.elf: C_EXECUTABLE_LINKER__camera.2eelf_Debug CMakeFiles/camera.elf.dir/Core/Src/dma.c.obj CMakeFiles/camera.elf.dir/Core/Src/gpio.c.obj CMakeFiles/camera.elf.dir/Core/Src/main.c.obj CMakeFiles/camera.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj CMakeFiles/camera.elf.dir/Core/Src/stm32f4xx_it.c.obj CMakeFiles/camera.elf.dir/Core/Src/syscalls.c.obj CMakeFiles/camera.elf.dir/Core/Src/sysmem.c.obj CMakeFiles/camera.elf.dir/Core/Src/system_stm32f4xx.c.obj CMakeFiles/camera.elf.dir/Core/Src/tim.c.obj CMakeFiles/camera.elf.dir/Core/Src/usart.c.obj CMakeFiles/camera.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_7725.c.obj CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_IIC.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+build camera.elf: C_EXECUTABLE_LINKER__camera.2eelf_Debug CMakeFiles/camera.elf.dir/Core/Src/dma.c.obj CMakeFiles/camera.elf.dir/Core/Src/gpio.c.obj CMakeFiles/camera.elf.dir/Core/Src/main.c.obj CMakeFiles/camera.elf.dir/Core/Src/spi.c.obj CMakeFiles/camera.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj CMakeFiles/camera.elf.dir/Core/Src/stm32f4xx_it.c.obj CMakeFiles/camera.elf.dir/Core/Src/syscalls.c.obj CMakeFiles/camera.elf.dir/Core/Src/sysmem.c.obj CMakeFiles/camera.elf.dir/Core/Src/system_stm32f4xx.c.obj CMakeFiles/camera.elf.dir/Core/Src/tim.c.obj CMakeFiles/camera.elf.dir/Core/Src/usart.c.obj CMakeFiles/camera.elf.dir/Core/Startup/startup_stm32f407vetx.s.obj CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_7725.c.obj CMakeFiles/camera.elf.dir/Core/modules/SEEKFREE_IIC.c.obj CMakeFiles/camera.elf.dir/Core/modules/lcd_fonts.c.obj CMakeFiles/camera.elf.dir/Core/modules/lcd_image.c.obj CMakeFiles/camera.elf.dir/Core/modules/lcd_spi_200.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj CMakeFiles/camera.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
   FLAGS = -g
   LINK_FLAGS = -Wl,-gc-sections,--print-memory-usage,-Map=E:/STM32/camera/cmake-build-debug/camera.map -mcpu=cortex-m4 -mthumb -mthumb-interwork -T E:/STM32/camera/STM32F407VETX_FLASH.ld
   OBJECT_DIR = CMakeFiles\camera.elf.dir

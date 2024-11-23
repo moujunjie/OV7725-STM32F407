@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "dma.h"
+#include "spi.h"
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
@@ -57,7 +58,34 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void LCD_Test_Clear(void)
+{
+    uint8_t	i = 0;			// 计数变量
 
+    LCD_SetTextFont(&CH_Font24);			// 设置2424中文字体,ASCII字体对应�?2412
+    LCD_SetColor(LCD_BLACK);				// 设置画笔颜色
+
+    for(i=0;i<8;i++)
+    {
+        switch (i)		// 切换背景�?
+        {
+            case 0: LCD_SetBackColor(LIGHT_RED); 		break;
+            case 1: LCD_SetBackColor(LIGHT_GREEN); 	break;
+            case 2: LCD_SetBackColor(LIGHT_BLUE); 		break;
+            case 3: LCD_SetBackColor(LIGHT_YELLOW); 	break;
+            case 4: LCD_SetBackColor(LIGHT_CYAN);		break;
+            case 5: LCD_SetBackColor(LIGHT_GREY); 		break;
+            case 6: LCD_SetBackColor(LIGHT_MAGENTA); 	break;
+            case 7: LCD_SetBackColor(LCD_WHITE); 		break;
+            default:	break;
+        }
+        LCD_Clear();		// 清屏
+        LCD_DisplayText(13, 70,"STM32 刷屏测试");
+        LCD_DisplayText(13,106,"屏幕分辨�?:240*320");
+        LCD_DisplayText(13,142,"控制�?:ST7789");
+        HAL_Delay(1000);	// 延时
+    }
+}
 /* USER CODE END 0 */
 
 /**
@@ -82,6 +110,7 @@ int main(void)
 
   /* Configure the system clock */
   SystemClock_Config();
+
   /* USER CODE BEGIN SysInit */
   ov7725_init();
   /* USER CODE END SysInit */
@@ -91,8 +120,10 @@ int main(void)
   MX_DMA_Init();
   MX_TIM8_Init();
   MX_USART1_UART_Init();
+  MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
   ov7725_init();
+  put_char(&huart1,0xBB);
   //DMA_NVIC_Init函数必须在ov7725初始化完成后
   //GPIO_NVIC_Init函数必须在ov7725初始化完成后
   DMA_NVIC_Init();
@@ -103,11 +134,12 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-      if(ov7725_finish_flag == 1)
+      LCD_Test_Clear();
+      /*if(ov7725_finish_flag == 1)
       {
           ov7725_finish_flag = 0;							//图像标志位置0
-          seekfree_sendimg_7725(image_bin,OV7725_SIZE);	//发送图像到上位机
-      }
+          seekfree_sendimg_7725(image_bin,OV7725_SIZE);	//发�?�图像到上位�??
+      }*/
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
