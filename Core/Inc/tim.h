@@ -35,7 +35,7 @@ extern "C" {
 extern TIM_HandleTypeDef htim8;
 
 /* USER CODE BEGIN Private defines */
-
+extern DMA_HandleTypeDef hdma_tim8_ch4_trig_com;
 /* USER CODE END Private defines */
 
 void MX_TIM8_Init(void);

@@ -82,9 +82,8 @@ int main(void)
 
   /* Configure the system clock */
   SystemClock_Config();
-
   /* USER CODE BEGIN SysInit */
-
+  ov7725_init();
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -93,13 +92,22 @@ int main(void)
   MX_TIM8_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  ov7725_init();
+  //DMA_NVIC_Init函数必须在ov7725初始化完成后
+  //GPIO_NVIC_Init函数必须在ov7725初始化完成后
+  DMA_NVIC_Init();
+  GPIO_NVIC_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+      if(ov7725_finish_flag == 1)
+      {
+          ov7725_finish_flag = 0;							//图像标志位置0
+          seekfree_sendimg_7725(image_bin,OV7725_SIZE);	//发送图像到上位机
+      }
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
